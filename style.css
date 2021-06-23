@@ -12,6 +12,11 @@ a{
   text-decoration: none;
 }
 
+@viewport{
+  zoom: 1.0;
+  width: device-width;
+}
+
 
 
 header{
@@ -40,10 +45,6 @@ header{
   font-family: 'Grand Hotel', cursive;
   color: #7569DE;
   font-size: 22px;
-}
-
-.menu{
-
 }
 
 .menu ul{
@@ -121,13 +122,16 @@ header{
   padding-left: 64px;
   margin-top: 32px;
   border-radius: 20px;
-  background: #A5CE55;
+  background-image: url(frutas.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
   justify-content: space-between;
   align-items: center;
   display: flex;
   width: 80%;
   min-height: 532px;
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  border: none;
 
 }
 
@@ -175,11 +179,166 @@ header{
 .destaquetxt a:hover{
   text-decoration: none;
   font-family: 'Museo Sans Rounded 700';
-  color: rgb(254, 104, 69);
+  color: rgb(255, 255, 255);
   font-size: 16px;
 }
 
+.barraca_virtual{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+  margin-bottom: 60px;
+}
 
+.barracaContainer{
+  display: flex;
+  flex-wrap: wrap;
+  background:#FFFFF0;
+  border-radius: 12px;
+  align-items: center;
+  padding: 2%;
+  width: 80%;
+  height: 100%;
+}
+
+.titulo_buscador{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.h2barraca{
+  font-family: 'Museo Sans Rounded 1000';
+  color: #A5CE55;
+  font-size: 28px;
+}
+
+.buscador{
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 10px;
+  border-radius: 15px;
+  min-height: 45px;
+  background: #EBEBEB;
+}
+
+.buscador input{
+  font-family: 'Museo Sans Rounded 700';
+  font-size: 15px;
+  opacity: 0.32;
+  resize: none;
+  background: none;
+  min-height: 100%;
+  border: none;
+  padding-left: 5px;
+  outline: none;
+}
+
+
+.buscador button{
+  min-width: 45px;
+  font-size: 15px;
+  opacity: 0.30;
+  height: 100%;
+  border: none;
+  cursor: pointer;
+}
+
+.filtros{
+  margin-top: 4px;
+  min-height: 45px;
+  width: 100%;
+  gap: 2rem;
+  display: flex;
+  align-items: center;
+}
+
+.filtros nav{
+  gap: 2rem;
+  display: flex;
+  width: 100%;
+}
+.filtros i{
+  align-items: center;
+  opacity: 0.32;
+  font-size: 15px;
+  display: inline-flex;
+}
+
+.filtros ul{
+  gap: 1rem;
+  display: flex;
+  list-style: none;
+}
+
+.filtros li{
+  cursor: pointer;
+  font-family: 'Museo Sans Rounded 500';
+  font-size: 15px;
+  opacity: 0.5;
+  display: block;
+  border-style: solid;
+  border-radius: 12px;
+  border-width: thin;
+  padding: 0px 12px 0px 12px;
+  border-color: #b1aec7;
+}
+
+.produtos{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 20px;
+  justify-content: space-between;
+}
+
+/*.produtos table, th, td{
+  border: 1px solid black;
+  border-collapse: collapse;
+}*/
+
+.produtos table{
+  display: inline-flex;
+  text-align: center;
+}
+
+.produtos table h3{
+  font-family: 'Museo Sans Rounded 1000';
+  font-size: 15px;
+  opacity: 0.82;
+  padding: 4px;
+}
+
+.produtos table h4{
+  padding: 4px;
+  font-family: 'Museo Sans Rounded 300';
+  font-size: 15px;
+  opacity: 0.82;
+}
+
+.produtos tr th button{
+  width: 180px;
+  height: 180px;
+  background-image: url(maca.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  border:none;
+  border-radius: 20px;
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+  transition-property: box-shadow, width,height, margin-top;
+  transition-timing-function: ease;
+  transition-duration: 0.28s;
+}
+
+.produtos button:hover{
+  margin-top: -5px;
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
 
 @media (max-width: 1000px){
   .menu{
