@@ -4,17 +4,18 @@
   box-sizing: border-box;
 }
 
+html{
+  scroll-behavior: smooth;
+}
+
 body{
   background: #EEFAD8;
 }
 
+
+
 a{
   text-decoration: none;
-}
-
-@viewport{
-  zoom: 1.0;
-  width: device-width;
 }
 
 
@@ -200,6 +201,7 @@ header{
   padding: 2%;
   width: 80%;
   height: 100%;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
 }
 
 .titulo_buscador{
@@ -212,7 +214,7 @@ header{
 
 .h2barraca{
   font-family: 'Museo Sans Rounded 1000';
-  color: #A5CE55;
+  color: rgb(165, 206, 85);
   font-size: 28px;
 }
 
@@ -276,68 +278,73 @@ header{
 }
 
 .filtros li{
+  background: #000;
+  color: #fff;
   cursor: pointer;
-  font-family: 'Museo Sans Rounded 500';
+  font-family: 'Museo Sans Rounded 300';
   font-size: 15px;
-  opacity: 0.5;
+  opacity: 0.2;
   display: block;
-  border-style: solid;
   border-radius: 12px;
-  border-width: thin;
   padding: 0px 12px 0px 12px;
-  border-color: #b1aec7;
 }
 
 .produtos{
   width: 100%;
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
   margin-top: 20px;
-  justify-content: space-between;
+  column-gap:0.5rem;
+  row-gap: 1.75rem;
+  grid-auto-columns: 143px;
+  grid-template-columns: repeat(auto-fit, minmax(143px, auto));
+  justify-content: space-around;
 }
 
-/*.produtos table, th, td{
-  border: 1px solid black;
-  border-collapse: collapse;
-}*/
-
-.produtos table{
-  display: inline-flex;
+.item{
+  display: grid;
   text-align: center;
+  grid-template-columns: 143px;
+  grid-template-rows: 143px 1fr;
+  row-gap: 0.938rem;
 }
 
-.produtos table h3{
+.item .img{
+  height: 100%;
+  overflow: hidden;
+  cursor: pointer;
+  border-radius: 20px;
+  box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+  transition-property: box-shadow, width,height, margin-top, margin-bottom;
+  transition-timing-function: linear;
+  transition-duration: 0.30s;
+}
+
+.item .img img{
+  height: 100%;
+}
+
+.img:hover{
+  margin-top: -10px;
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+
+
+.preco{
+  gap: 0.5rem;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+}
+
+.preco h3{
   font-family: 'Museo Sans Rounded 1000';
   font-size: 15px;
   opacity: 0.82;
-  padding: 4px;
 }
 
-.produtos table h4{
-  padding: 4px;
+.preco h4{
   font-family: 'Museo Sans Rounded 300';
   font-size: 15px;
   opacity: 0.82;
-}
-
-.produtos tr th button{
-  width: 180px;
-  height: 180px;
-  background-image: url(maca.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  cursor: pointer;
-  border:none;
-  border-radius: 20px;
-  box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
-  transition-property: box-shadow, width,height, margin-top;
-  transition-timing-function: ease;
-  transition-duration: 0.28s;
-}
-
-.produtos button:hover{
-  margin-top: -5px;
-  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
 }
 
 @media (max-width: 1000px){
