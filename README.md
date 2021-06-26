@@ -37,6 +37,6 @@ Back-End
     ⏸️ Sistema de Pagamento Vinculado ao Sistema de Membros</br></pre>
 
 
-Foto
-
-<img src='projeto.png'>
+Arquivos
+<pre>
+<img src='projeto.png'></pre>
