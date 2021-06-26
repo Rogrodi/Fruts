@@ -11,7 +11,7 @@ Demandas do Projeto
   🔄 Site</br>
     ✔️ Area destacando serviço de assinatura.</br>
     ✔️ Area para o catalogo de produtos por unidade.</br>
-    ▶️ Area para catalogo de pacotes de produtos.</br>
+    👨‍💻 Area para catalogo de pacotes de produtos.</br>
     ❌ Area para publicação de receitas feitas com os produtos vendidos.</br>
     ❌ Rodapé com informações tecnicas e judiciais.</br>
     ❌ Carrinho flutuante na parte inferior direito da página</br>
