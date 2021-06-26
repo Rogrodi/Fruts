@@ -38,5 +38,4 @@ Back-End
 
 
 Arquivos
-<pre>
-<img src='projeto.png'></pre>
+<pre><img style='border-radius:12px;' src='projeto.gif'></pre>
