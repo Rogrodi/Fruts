@@ -33,7 +33,7 @@ header{
   /*border-radius: 8px 8px 0px 0px;*/
   padding-right: 32px;
   padding-left: 32px;
-  background-image: url(background.svg);
+  background-image: url(img/background.svg);
   background-size: auto 100%;
   display: flex;
   justify-content: space-between;
@@ -123,7 +123,7 @@ header{
   padding-left: 64px;
   margin-top: 32px;
   border-radius: 20px;
-  background-image: url(frutas.jpg);
+  background-image: url(img/frutas.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   justify-content: space-between;
