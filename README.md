@@ -42,4 +42,4 @@ Legenda<pre>⌛ Esperando</br>
 </pre>
 
 Arquivos
-<pre><img style='border-radius:12px;' src='projeto.gif'></pre>
+<pre><img style='border-radius:12px;' src='img/projeto.gif'></pre>
